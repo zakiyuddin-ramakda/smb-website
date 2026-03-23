@@ -4,33 +4,95 @@
     <title>SMB Fashion Wear</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial;
+            background: #f5f5f5;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: black;
+            color: white;
+            padding: 15px;
             text-align: center;
-            background-color: #f2f2f2;
+            font-size: 20px;
         }
-        h1 {
-            color: #333;
+
+        /* Hero Section */
+        .hero {
+            padding: 50px;
+            text-align: center;
+            background: #222;
+            color: white;
         }
-        .box {
+
+        /* Products */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
             background: white;
             padding: 20px;
-            margin: 50px;
             border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
         button {
-            padding: 10px 20px;
+            padding: 10px;
             background: black;
             color: white;
             border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
+
 <body>
 
-<div class="box">
-    <h1>SMB Fashion Wear</h1>
-    <p>Welcome to my shop website 👕</p>
-    <button onclick="alert('Thanks for visiting!')">Click Me</button>
+<div class="navbar">SMB Fashion Wear</div>
+
+<div class="hero">
+    <h1>Latest Fashion Collection 👕</h1>
+    <p>Best quality कपड़े at best price</p>
+</div>
+
+<div class="products">
+    <div class="card">
+        <h3>T-Shirt</h3>
+        <p>₹499</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <h3>Jeans</h3>
+        <p>₹999</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+        <h3>Shirt</h3>
+        <p>₹699</p>
+        <button>Buy Now</button>
+    </div>
+</div>
+
+<div class="footer">
+    © 2026 SMB Fashion Wear
 </div>
 
 </body>
